@@ -1,4 +1,4 @@
-const qoutes = [
+export default [
     { quote: "The only way to do great work is to love what you do.", person: "Steve Jobs" },
     { quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.", person: "Winston Churchill" },
     { quote: "The future belongs to those who believe in the beauty of their dreams.", person: "Eleanor Roosevelt" },
@@ -10,15 +10,3 @@ const qoutes = [
     { quote: "The purpose of our lives is to be happy.", person: "Dalai Lama" },
     { quote: "You only live once, but if you do it right, once is enough.", person: "Mae West" },
   ];
-
-const qouteText = document.querySelector('.qoute');
-const author = document.querySelector('.author');
-
-const btn = document.querySelector('#new-qoute')
-
-
-btn.addEventListener('click', function(){
-    const random = Math.floor(Math.random() * qoutes.length);
-    qouteText.innerText = qoutes[random].quote;
-    author.innerText = qoutes[random].person;
-})

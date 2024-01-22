@@ -52,6 +52,13 @@ body {
     font-weight: bold;
 }
 
+.text-area .author {
+    font-size: 24px;
+    margin-top: 18px;
+    text-transform: uppercase;
+    color: rgb(244, 63, 63);
+}
+
 .text-area #new-qoute {
     width: 40%;
     margin: auto;
